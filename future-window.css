@@ -1,0 +1,244 @@
+/* MAIN */
+
+*{
+	box-sizing: border-box;
+
+}
+
+.main-form{
+	max-width:2000px ;
+}
+
+body{
+    background-image: url('https://img.freepik.com/premium-vector/purple-web-development-background_76964-167.jpg?w=2000 ');
+	min-height: 100vh;
+	display:flex;
+	flex-direction: column;
+	
+}
+
+main{
+	flex-grow: 1;
+
+} 
+.main-container{
+	margin: 6em;
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+
+}
+
+.main-container > * {
+	flex-grow:1; 
+	flex-basis: 0;
+	min-width: 20em;
+}
+ 
+.container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+} 
+
+/* att välja DAG */
+.choose-day{
+	
+	flex-direction: column;
+	background-color: rgba(109, 123, 135, 0.597);
+	border-right: 4px solid rgba(0, 0, 0, 0.192);
+	padding-top: 4em;
+	font-size: 1.4em;
+
+}
+.myproject--checkbox{
+    height:40px;
+    width:40px;
+    accent-color:red;
+  }
+	
+.choose-day > hr{
+	margin: 0 3em 3em;
+}
+	p{
+		font-size: 20px;
+	}
+
+	/* Kontakt information */
+
+#quantity{
+	width:3em;
+	margin-bottom:1.5em;
+	
+}
+
+.contact-information > form{
+	height: 100%;
+	font-size: 22px;
+
+}
+
+
+form {
+	/* ÄNDRAR SÖKFÄLTETS STORLEKEN PÅ KONTAKTINFORMATIONEN */
+	background-color: rgba(109, 123, 135, 0.597);
+	padding: 4em;
+	font-weight: bold; 
+}
+
+.form-layout {
+	display: flex;
+	flex-direction: column;
+
+}
+ form p {
+	display: flex;
+	margin-bottom: 2em;
+	justify-content: center;
+	
+ }
+input, button {
+	font-size: 100%;
+}
+input::placeholder {
+	color:rgba(128, 128, 128, 0.756);
+	
+}
+input[type="text"] {
+	min-width: 190px;
+}
+
+input:invalid {
+	
+	border-right: 0.5em solid rgb(255, 10, 10);
+}
+input:valid {
+	border-right: 0.5em solid rgb(29, 176, 29);
+}
+
+.error-message {
+	visibility: hidden;
+	margin: 0;
+	font-weight: normal;
+	font-size: 90%;
+	color: rgb(134, 13, 13);
+}
+input:invalid + .error-message {
+	visibility: visible; 
+
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	font-weight: normal; 
+}
+
+button:hover,
+input[type="checkbox"]:hover,
+input[type="checkbox"] + label:hover,
+input[type="radio"]:hover,
+input[type="radio"] + label:hover {
+	cursor: pointer;
+}
+
+
+/* Beställa mat */
+
+.food-order{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	border-left:solid rgba(0, 0, 0, 0.192);
+
+}
+.food-text{
+	display: flex;
+	flex-direction: column;
+	font-size: 22px;
+	
+}
+h1{
+	font-size: 29px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 1em;
+    height: 1em;
+	font-size: 23px;
+}
+.radio-btn{
+	font-size: 1.3em;
+	margin: 0.5em 0;
+}
+
+.radio-btn:hover{
+	background-color: white;
+	cursor: pointer;
+}
+
+
+hr{
+	margin-bottom: 1.5em;
+}
+
+.requests{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+
+}
+
+.requests p{
+	font-size: 23px;
+	margin-bottom: 0.5em;
+}
+
+.color-background{
+	font-size: 24px;
+	
+}
+
+.btn-grad{
+display: flex;
+padding: 2.5em;
+justify-content: center;
+}
+
+@media(max-width:850px ) {
+	
+	.main-container{
+		margin-top: 6em;
+		margin-left:1em;
+		margin-right: 1em;
+		display:flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+	
+	}
+	
+	
+}
+
+@media all and (max-width:900px) {
+	
+
+	.footer-menu {
+		display: flex;
+		/* flex-direction: column; */
+		background-color: #000000;
+		color: rgb(255, 255, 255);
+		line-height: 20%;
+		flex-wrap: wrap;
+	
+	}
+	.icons .img-resize {
+		display: none;
+		}
+		.footer-line{
+			display:none;
+		}
+
+	}
+
+	
