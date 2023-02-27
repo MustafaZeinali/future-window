@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    max-width: ;
+
+    height: 6rem;
+    color: rgb(2, 2, 2);
+}
+.list-text{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.list-text p:hover{
+    color: tomato ;
+   
+
+}
+.list-text p {
+    padding: 1em;
+    transition: 0.4s ;
+}
+
+.list-group-item {
+    background: linear-gradient(0deg, #6969ff, #c669ff);
+    animation: hue-rotate 2s linear infinite alternate;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #f3ffff;
+    border-radius: 5px;
+    animation: animate 3s linear infinite;
+}
+.course{
+    text-decoration: none;
+    color: #f3ffff;
+}
