@@ -134,6 +134,7 @@ input[type="radio"] + label {
 	font-weight: normal; 
 }
 
+<<<<<<< HEAD
 button:hover,
 input[type="checkbox"]:hover,
 input[type="checkbox"] + label:hover,
@@ -143,6 +144,8 @@ input[type="radio"] + label:hover {
 }
 
 
+=======
+>>>>>>> 6bc7a09ad459eaa6acff372fd7b23aeaa8ee9ae2
 /* Beställa mat */
 
 .food-order{
@@ -176,10 +179,13 @@ input[type=checkbox] {
 	position: relative;
 }
 
+<<<<<<< HEAD
 .radio-btn:hover{
 	
 	/*cursor: pointer;*/
 }
+=======
+>>>>>>> 6bc7a09ad459eaa6acff372fd7b23aeaa8ee9ae2
 
 .list-text a {
 	text-decoration: none;
