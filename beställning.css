@@ -139,7 +139,7 @@ input[type="checkbox"]:hover,
 input[type="checkbox"] + label:hover,
 input[type="radio"]:hover,
 input[type="radio"] + label:hover {
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 
@@ -168,15 +168,17 @@ input[type=checkbox] {
     width: 1em;
     height: 1em;
 	font-size: 23px;
+	cursor: pointer;
 }
 .radio-btn{
 	font-size: 1.3em;
 	margin: 0.5em 0;
+	position: relative;
 }
 
 .radio-btn:hover{
 	
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 .list-text a {
@@ -199,6 +201,16 @@ hr{
 	font-size: 23px;
 	margin-bottom: 0.5em;
 }
+#radioVegetarisk:checked ~ .radio-btn > input[type="checkbox"] {
+	pointer-events: none;
+	opacity: 0.5;
+  }
+
+  /* Disable adjacent checkboxes when "ej mat" is checked */
+  #radioEjMat:checked ~ .radio-btn > input[type="checkbox"] {
+	pointer-events: none;
+	opacity: 0.5;
+  }
 
 .color-background{
 	font-size: 24px;
@@ -291,7 +303,7 @@ justify-content: center;
 	  top: -7px;
 	  left: -5px;
 	  
-	  cursor: pointer;
+	  
 	  
 	  opacity: 0; 
 	  z-index: 2; 
